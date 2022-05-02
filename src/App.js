@@ -1,7 +1,10 @@
-import DragList from "./DragList";
+import React from "react";
+import Board from "./component/Board.jsx";
+import './sass/style.scss'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return <DragList />;
+  return <Board />;
 }
 
 export default App;

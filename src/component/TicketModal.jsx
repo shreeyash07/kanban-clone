@@ -2,16 +2,16 @@ import React from "react";
 import Modal from "react-modal";
 import TicketForm from "./TicketForm";
 
-const TicketModal = ({ modalIsOpen, closeModal, addTask }) => {
+const TicketModal = ({ modalIsOpen, closeModal, handleSubmit, title, isEdit }) => {
 
     return (
         <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
-            className="modal-appointment"
+            className="modal-ticket"
             ariaHideApp={false}
         >
-            <TicketForm closeModal={closeModal} addTask={addTask} />
+            <TicketForm closeModal={closeModal} handleSubmit={handleSubmit} title={title} isEdit = {isEdit}/>
         </Modal>
     );
 };
