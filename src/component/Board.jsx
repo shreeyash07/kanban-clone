@@ -94,7 +94,7 @@ const Board = () => {
     return (
         <div className="board">
             <DragDropContext onDragEnd={onDragEnd}>
-                <h2>Kanaban Board</h2>
+                <h2>Kanban Board</h2>
                 <div className="mb-3">
 
                     <button className="button button-30" onClick={openModal}>
